@@ -1,4 +1,5 @@
-        Shopping Check List | URL : https://aj04.github.io/angular-js/module2-solution/ 
+        Shopping Check List 
+URL : https://aj04.github.io/angular-js/module2-solution/ 
 
 The idea of this assignment is to create a "check off" shopping List application.
 
