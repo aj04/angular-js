@@ -1,0 +1,26 @@
+<!--<div class="loader">-->
+<br><br>
+<div ng-if="menu.found.length==0">
+    <h3>{{menu.errorMessage}}</h3>
+</div>
+<div ng-if="menu.found.length>0">
+  <h3>{{title}}</h3>
+  <table class="table table-striped table-bordered table-hover table-condensed">
+    <tr>
+      <th>Name</th>
+      <th>Short Name</th>
+      <th>Description</th>
+      <th>Action</th>
+    </tr>
+    <tr ng-repeat="item in menu.found" ng-class-odd="odd" ng-class-even="even">
+      <td>{{item.name}}</td>
+      <td>{{item.short_name}}</td>
+      <td>{{item.description}}</td>
+      <!--<td><button ng-click="menu.onRemove({index: $index});">Bad Remove Item</button></td>-->
+      <td>
+          <button ng-click="menu.removeItem($index);">Don't want this one!</button>
+      </td>
+    </tr>
+  </table>
+
+</div>
