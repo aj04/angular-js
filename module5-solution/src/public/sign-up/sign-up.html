@@ -1,6 +1,3 @@
-<script>console.log('hi');</script>
-
-{{signUpCtrl.hello}}
 <div>
 <fieldset>
     <legend><h2>Registration</h2></legend>
@@ -11,7 +8,6 @@
                required
                minlength="4"
                ng-maxlength="10">
-        {{ signUpCtrl.user.firstName }}
         <span
                 ng-if="(regForm.firstName.$error.minlength || regForm.firstName.$error.required) && regForm.firstName.$touched">
             Username must be at least 4 characters long
@@ -26,7 +22,6 @@
                required
                minlength="4"
                ng-maxlength="10">
-        {{ signUpCtrl.user.lastName }}
         <span
                 ng-if="(regForm.lastName.$error.minlength || regForm.lastName.$error.required) && regForm.lastName.$touched">
             lastName must be at least 4 characters long
@@ -41,7 +36,6 @@
         <span ng-if="regForm.email.$invalid && regForm.email.$touched">
             Must be a valid email address: handle@domain format
           </span>
-        {{ signUpCtrl.user.email }}
         <br>
         <input type="text" name="phone" placeholder="Phone ###-###-####"
                ng-model="signUpCtrl.user.phone"
@@ -49,7 +43,6 @@
         <span ng-if="regForm.phone.$invalid && regForm.phone.$touched">
             Phone must be in the format ###-###-####.
           </span>
-        {{ signUpCtrl.user.phone }}
         <br>
         <input type="text" name="fav" placeholder="Your favourite Dish"
                ng-model="signUpCtrl.user.favDish">
