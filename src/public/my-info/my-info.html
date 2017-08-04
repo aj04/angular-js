@@ -1,0 +1,48 @@
+<div class="container">
+    <div ng-if="myInfoCtrl.signUpStatus==false">
+        <h2>Not Signed Up Yet. <a ui-sref="public.signup">Sign up Now!</a></h2>
+    </div>
+
+    <div ng-if="myInfoCtrl.signUpStatus==true">
+        <h2 class="left-pad">My Information</h2>
+    </div>
+
+    <div class="info-table" ng-if="myInfoCtrl.signUpStatus==true">
+        <div class="col-md-6 col-sm-8 col-xs-6 col-xxs-12">
+            <table class="table table-striped table-bordered table-hover table-condensed">
+                <tr ng-class-odd="odd" ng-class-even="even">
+                    <td>First Name</td>
+                    <td>{{myInfoCtrl.user.firstName}}</td>
+                </tr>
+                <tr ng-class-odd="odd" ng-class-even="even">
+                    <td>Last Name</td>
+                    <td>{{myInfoCtrl.user.lastName}}</td>
+                </tr>
+                <tr ng-class-odd="odd" ng-class-even="even">
+                    <td>Favourite Dish</td>
+                    <td>{{myInfoCtrl.user.favTitle}}</td>
+                </tr>
+                <tr ng-class-odd="odd" ng-class-even="even">
+                    <td>Description of the Dish</td>
+                    <td>{{myInfoCtrl.user.favDisc}}</td>
+                </tr>
+                <tr ng-class-odd="odd" ng-class-even="even">
+                    <td>Phone</td>
+                    <td>{{myInfoCtrl.user.phone}}</td>
+                </tr>
+                <tr ng-class-odd="odd" ng-class-even="even">
+                    <td>Email ID</td>
+                    <td>{{myInfoCtrl.user.email}}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+                    <div class="category-tile">
+                        <img width="200" height="200" ng-src="https://ajaydubey.herokuapp.com/images/{{myInfoCtrl.user.favDish}}.jpg"
+                             alt="{{myInfoCtrl.user.favDish}}">
+                        <span>{{myInfoCtrl.user.favDish}}</span>
+                    </div>
+        </div>
+
+    </div>
+</div>
