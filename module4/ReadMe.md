@@ -1,4 +1,4 @@
-Angular UI Router : https://aj04.github.io/angular-js/module4-solution/#/
+Angular UI Router : https://aj04.github.io/china-bistro/module4/#/
 
 
 This Application has 3 views (i.e., 3 view states): home (home), categories list (categories), items list (items).

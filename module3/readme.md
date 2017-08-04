@@ -1,4 +1,4 @@
-Modlue 3 Solution : https://aj04.github.io/angular-js/module3-solution/
+Narrow Down Your Choices : https://aj04.github.io/china-bistro/module3/
 
 Your task is create a text box and a button with the label "Narrow It Down For Me!".
 
